@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      {% include 'includs/meta.html'%}{% comment %} meta tag {% endcomment %}
+      <!-- site metas -->
+      <title>Joy Seno</title>
+      <!-- bootstrap css -->
+      {% include 'includs/link.html' %}{% comment %} link tag {% endcomment %}
+   </head>
+   <body>
+      <!-- header section start -->
+      <div class="header_section">
+         {% include 'includs/menu.html'%}{% comment %} menu section {% endcomment %}
+         <!-- banner section start -->
+         {%block bannerContent%}
+      
+         
+         {%endblock bannerContent%}
+         <!-- banner section end -->
+      </div>
+      <!-- header section end -->
+      <!-- services section start -->
+       {% block maincontent%}
+       {% endblock maincontent%}
+      <!-- project box section end -->
+      <!-- footer section start -->
+      {% include 'includs/footer.html'%}{% comment %} footer section {% endcomment %}
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      {% include 'includs/js.html'%}{% comment %} scripts tag {% endcomment %}
+   </body>
+</html>
